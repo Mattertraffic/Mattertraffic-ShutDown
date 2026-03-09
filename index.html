@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mattertraffic</title>
+  <style>
+    :root {
+      --bg: #0f1115;
+      --panel: #171a21;
+      --text: #f3f4f6;
+      --muted: #b8bfcc;
+      --line: rgba(255,255,255,0.10);
+      --accent: #d7dde8;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: radial-gradient(circle at top, #1a1f29 0%, var(--bg) 55%);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      padding: 24px;
+    }
+
+    .card {
+      width: min(760px, 100%);
+      background: rgba(23, 26, 33, 0.88);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 48px 32px;
+      text-align: center;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.35);
+      backdrop-filter: blur(10px);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-size: 12px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0 0 16px;
+      font-size: clamp(2rem, 4vw, 3.3rem);
+      line-height: 1.1;
+      font-weight: 700;
+    }
+
+    p {
+      margin: 0 auto 16px;
+      max-width: 620px;
+      color: var(--accent);
+      font-size: 1.05rem;
+    }
+
+    .date {
+      margin: 26px 0 18px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .small {
+      margin-top: 28px;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    a {
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="eyebrow">Mattertraffic</div>
+    <h1>Thank you</h1>
+    <p>
+      After an important chapter over the past several years, Mattertraffic will be discontinuing operations and shutting down its systems on <strong>March 31, 2026</strong>.
+    </p>
+    <p>
+      We are grateful to everyone who supported the vision, used the platform, collaborated with us, and followed the journey.
+    </p>
+    <p>
+      Thank you for being part of it.
+    </p>
+    <div class="date">Systems shutdown date: March 31, 2026</div>
+    <p class="small">
+      For any final inquiries, please contact <a href="mailto:info@mattertraffic.com">info@mattertraffic.com</a>.
+    </p>
+  </main>
+</body>
+</html>
